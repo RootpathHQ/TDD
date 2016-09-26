@@ -6,9 +6,9 @@ class PostTest < ActiveSupport::TestCase
   # end
 
   test "should be invalid without a title" do
-    @post.title = nil
-    assert_nil @post.title
-    assert_equal false, @post.valid?
+    posts(:one).title = nil
+    assert_nil posts(:one).title
+    assert_equal false, posts(:one).valid?
   end
 
 end
