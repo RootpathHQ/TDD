@@ -9,4 +9,9 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     get '/posts/new'
     assert_response :success
   end
+
+  test "should get index" do
+    get posts_url
+    assert_response :success
+  end
 end
