@@ -15,7 +15,6 @@ class PostFlowTest < ActionDispatch::IntegrationTest
     end
   end
 
-
   test "can create a post" do
     get "/posts/new"
     assert_response :success

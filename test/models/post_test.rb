@@ -1,10 +1,6 @@
 require 'test_helper'
 
 class PostTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
-
   test "should be invalid without a title" do
     posts(:one).title = nil
     assert_nil posts(:one).title
@@ -24,5 +20,4 @@ class PostTest < ActiveSupport::TestCase
   test "post body should be a string" do
     assert_equal true, posts(:one).body.is_a?(String)
   end
-
 end
