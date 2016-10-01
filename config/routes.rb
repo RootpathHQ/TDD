@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  root 'posts#index'
-  resources :posts
+  # Sets app homepage to Posts#index
+    root 'posts#index'
+
+  # Creates routes for Posts Controller
+    resources :posts
 end

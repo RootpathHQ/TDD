@@ -1,3 +1,4 @@
 class Post < ApplicationRecord
-  validates :title, :body, presence: true
+  # Validates Post if it has Title and Body
+    validates :title, :body, presence: true
 end
