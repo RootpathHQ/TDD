@@ -12,7 +12,6 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get show" do
-    get '/posts/'
-    assert_response :success
+    assert_generates "/posts/1", { controller: "posts", action: "show", id: "1" }
   end
 end
