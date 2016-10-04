@@ -10,4 +10,9 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     get posts_url
     assert_response :success
   end
+
+  test "should get show" do
+    get '/posts/'
+    assert_response :success
+  end
 end
