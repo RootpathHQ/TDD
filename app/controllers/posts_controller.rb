@@ -27,6 +27,11 @@ class PostsController < ApplicationController
       end
   end
 
+  # POST /posts/:id(.:format)
+  def show
+    @post = Post.find(params[:id])
+  end
+
   # Private methods
   private
     # Whitelists Post params hash
